@@ -84,6 +84,9 @@ local function reserve()
     out_date_str = "2015-04-" .. out_date_str
   end
 
+  local lat = 38.0235 + (math.random(0, 481) - 240.5)/1000.0
+  local lon = -122.095 + (math.random(0, 325) - 157.0)/1000.0
+
   local hotel_id = tostring(math.random(1, 80))
   local user_id, password = get_user()
   local cust_name = user_id
