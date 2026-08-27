@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: cpu-quota
+  namespace: hotel-res
+spec:
+  hard:
+    limits.cpu: "8"
